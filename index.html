@@ -1,0 +1,19 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blue Games</title>
+<style>
+body{margin:0;font-family:system-ui,sans-serif;background:#0b1e3f;color:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:#1565ff}
+h1{font-size:20px;margin:0}h2{margin:10px}
+button{background:#2d7bff;color:#fff;border:0;border-radius:10px;padding:8px 12px;font-size:16px;cursor:pointer;margin:2px}
+.gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;padding:10px}.gl button{font-size:30px;padding:16px}
+#camb{position:fixed;left:12px;bottom:12px;font-size:26px;border-radius:50%;z-index:5}
+canvas{max-width:100%;background:#000;touch-action:none;display:block;margin:auto}
+.mg{display:grid;grid-template-columns:repeat(4,70px);gap:6px;justify-content:center;margin:10px auto}.mg button{height:70px;font-size:28px}
+#md{position:fixed;inset:0;background:#000a;display:flex;align-items:center;justify-content:center;z-index:9}#md[hidden]{display:none}
+.box{background:#12306b;padding:16px;border-radius:14px;max-width:92vw;max-height:88vh;overflow:auto;position:relative;min-width:260px}.x{position:absolute;right:6px;top:6px}
+textarea,input{font-family:monospace;padding:6px;border-radius:6px;border:0;margin:3px;max-width:100%}textarea{width:100%;box-sizing:border-box}
+.sc{text-align:center}video,#mc img{max-width:100%;width:300px}.ch{height:160px;overflow:auto;background:#0004;padding:6px;margin-bottom:6px}
+</style></head><body>
+<header><button id="adm">🛠 Admin</button><h1>Blue Games</h1><span><button id="acc">Inloggen</button><button id="plus">＋</button></span></header>
+<main id="v"></main><button id="camb">📷</button>
+<div id="md" hidden><div class="box"><button class="x">✕</button><div id="mc"></div></div></div>
+<script src="games.js"></script><script src="app.js"></script></body></html>
